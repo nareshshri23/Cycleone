@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CYCLEONE - Bicycle Sharing Project</title>
+    <link rel="icon" href="/images/new_logo_black[1].png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        #particleCanvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            pointer-events: auto;
+            background: transparent;
+            opacity: 1;
+            visibility: visible;
+            transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+        }
+        #home  {
+            position: relative;
+            z-index: 1;
+            min-height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div id="loading-overlay">
+        <div class="bicycle-container">
+            <img src="/images/new_logo_black[1].png" alt="bicycle" class="bicycle">
+        </div>
+    </div>
+    
+    
+    <!-- <nav>
+        <div class="logo" data-aos="fade-right">CYCLEONE</div>
+        <ul>
+            <li><a href="#home" data-aos="fade-down" data-aos-delay="100">Home</a></li>
+            <li><a href="#about" data-aos="fade-down" data-aos-delay="200">About</a></li>
+            <li><a href="#model" data-aos="fade-down" data-aos-delay="300">Model</a></li>
+            <li><a href="#funding" data-aos="fade-down" data-aos-delay="400">Funding</a></li>
+            <li><a href="#team" data-aos="fade-down" data-aos-delay="500">Team</a></li>
+        </ul> -->
+
+
+        <!-- <div class="theme-toggle" data-aos="fade-left">
+            <i class="fas fa-moon"></i>
+        </div> -->
+    <!-- </nav> -->
+
+      
+<nav>
+    <div class="navbar">
+        <img class="nav-logo" src="/images/new_logo_black[1].png" width="40px" height="40px" >
+        <p class="nav-name">CYCLEONE</p>
+        <ul>
+            <li class="list active">
+                <a href="#home">
+                    <span class="icon"><i class="fa-solid fa-house"></i></span>
+                    <span class="text">Home</span>
+                    <span class="circle"></span>
+                </a>
+            </li>
+
+            <li class="list">
+                <a href="#about">
+                    <span class="icon"><i class="fa-solid fa-circle-info"></i></span>
+                    <span class="text">About</span>
+                    <span class="circle"></span>
+                </a>
+            </li>
+
+            <li class="list">
+                <a href="#model">
+                    <span class="icon"><i class="fa-solid fa-bicycle"></i></span>
+                    <span class="text">Model</span>
+                    <span class="circle"></span>
+                </a>
+            </li>
+
+            <li class="list">
+                <a href="#funding">
+                    <span class="icon"><i class="fa-solid fa-handshake"></i></span>
+                    <span class="text">Funding</span>
+                    <span class="circle"></span>
+                </a>
+            </li>
+
+            <li class="list">
+                <a href="#team">
+                    <span class="icon"><i class="fa-solid fa-user-group"></i></span>
+                    <span class="text">Team</span>
+                    <span class="circle"></span>
+                </a>
+            </li>
+            <div class="indicator"></div>
+        </ul>
+
+       </div>
+       </nav>
+
+
+
+
+
+
+
+    <section id="home">
+        <canvas id="particleCanvas"></canvas>
+        <div class="hero" data-aos="zoom-in">
+            <div class="hero-content">
+                <h1>Welcome to CYCLEONE</h1>
+                <div class="slogan" data-aos="fade-up" data-aos-delay="200">
+                    CONNECT<span class="slogan-separator">•</span>COMMUTE<span class="slogan-separator">•</span>CONSERVE
+                </div>
+                <!-- <a href="#about" class="cta-button">Learn More</a> -->
+                 <p class="cta-button" >Let's ride the </p>
+                 <h1 class="future-txt">FUTURE</h1>
+                 
+            </div>
+            <div class="hero-image" data-aos="fade-left" data-aos-delay="300">
+                <img src="https://images.unsplash.com/photo-1485965120184-e220f721d03e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Modern Bicycle">
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2 data-aos="fade-up">About Our Project</h2>
+        <p>We are a team of undergraduate students at SLIET dedicated to developing 
+            an efficient campus commute system. Our project focuses on the installation of 
+            cycle stands across the campus, ensuring the easy availability of bicycles. 
+            This initiative aims to promote eco-friendly transportation, reduce dependence
+             on motorized vehicles, and foster a culture of fitness and environmental consciousness 
+             within our academic community.
+
+        </p>
+                
+        <div class="about-container">
+            <div class="about-image" data-aos="fade-right">
+                <!-- <img src="https://images.unsplash.com/photo-1571068316344-75bc76f77890?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Bicycle Sharing Station"> -->
+                 <video autoplay loop muted src="/images/man-riding.mp4"></video>
+            </div>
+            <div class="about-content" data-aos="fade-left" data-aos-delay="200">
+                <div class="about-features">
+                    <div class="feature">
+                        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Eco-friendly">
+                        <h3>Eco-friendly</h3>
+                        <p>Zero emissions, better environment</p>
+                    </div>
+
+                    <div class="feature">
+                        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Eco-friendly">
+                        <h3>Eco-friendly</h3>
+                        <p>Zero emissions, better environment</p>
+                    </div>
+
+                    
+                    <div class="feature">
+                        <img src="https://images.unsplash.com/photo-1534224039826-c7a0eda0e6b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Convenient">
+                        <h3>Convenient</h3>
+                        <p>Available 24/7 at your service</p>
+                    </div>
+                    <div class="feature">
+                        <img src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Affordable">
+                        <h3>Affordable</h3>
+                        <p>Budget-friendly transportation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <section id="timeline">
+            <h1 data-aos="fade-down">Our Journey</h1>
+            <p class="leader" data-aos="fade-up">Tracking our progress and milestones in revolutionizing urban mobility.</p>
+            <div class="timeline-wrapper">
+                <div class="bottom-dot"></div>
+                <div class="timeline-card left" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="300">
+                    <div class="content">
+                        <div class="number">01</div>
+                        <h2>Innovation Begins</h2>
+                        <p>Started with a vision to transform urban transportation through smart bike-sharing technology.</p>
+                    </div>
+                    <div class="hover-image">
+                        <img src="/images/mypic.jpg" alt="Innovation Phase">
+                    </div>
+                </div>
+
+                <div class="timeline-card right" data-aos="fade-left">
+                    <div class="content">
+                        <div class="number">02</div>
+                        <h2>Technology Integration</h2>
+                        <p>Implemented cutting-edge IoT solutions and mobile app development for seamless user experience.</p>
+                    </div>
+                    <div class="hover-image">
+                        <img src="assets/timeline2.jpg" alt="Technology Phase">
+                    </div>
+                </div>
+
+                <div class="timeline-card left" data-aos="fade-right">
+                    <div class="content">
+                        <div class="number">03</div>
+                        <h2>Community Growth</h2>
+                        <p>Expanded our network and built strong partnerships with local communities and organizations.</p>
+                    </div>
+                    <div class="hover-image">
+                        <img src="assets/timeline3.jpg" alt="Community Phase">
+                    </div>
+                </div>
+
+                <div class="timeline-card right" data-aos="fade-left">
+                    <div class="content">
+                        <div class="number">04</div>
+                        <h2>Sustainable Future</h2>
+                        <p>Committed to environmental sustainability and reducing carbon footprint in urban areas.</p>
+                    </div>
+                    <div class="hover-image">
+                        <img src="assets/timeline4.jpg" alt="Future Phase">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+    </section>
+
+
+
+    <section id="model">
+        <h2 data-aos="fade-up">Working Model</h2>
+        <div class="model-grid">
+            <div class="model-card" data-aos="flip-left" data-aos-delay="100">
+                <i class="fa-solid working-icon fa-mobile" style="color: #ffffff;"></i>
+                <h3>Download App from Playstore</h3>
+                <p>Free download our Cycleone app from playstore  and register with your SLIET email</p>
+            </div>
+
+            <div class="model-card" data-aos="flip-left" data-aos-delay="100">
+                <i class="fa-solid working-icon fa-qrcode"></i>
+                <h3>Scan QR from Stand</h3>
+                <p>Open App and scan QR available on stand to unlock bicycle</p>
+            </div>
+
+
+            <div class="model-card" data-aos="flip-left" data-aos-delay="200">
+                <i class="fa-solid working-icon fa-location-dot"></i>
+                <h3>Enjoy the Ride within the SLIET Campus</h3>
+                <p>Enjoy ride for limited time access</p>
+            </div>
+            <div class="model-card" data-aos="flip-left" data-aos-delay="300">
+                <i class="fa-solid working-icon fa-square-parking"></i>
+                <h3>Park at Nearest Stand</h3>
+                <p>Open App and scan QR available on stand to lock bicycle</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="funding">
+        <h2 data-aos="fade-up">Funding Details</h2>
+        <div class="funding-content" data-aos="fade-up" data-aos-delay="200">
+            <div class="funding-stats">
+                <div class="stat">
+                    <h3>Initial Investment</h3>
+                    <p>$2M</p>
+                </div>
+                <div class="stat">
+                    <h3>Current Valuation</h3>
+                    <p>$5M</p>
+                </div>
+                <div class="stat">
+                    <h3>Monthly Revenue</h3>
+                    <p>$100K</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team">
+        <h2 data-aos="fade-up">Our Team</h2>
+        <div class="team-grid">
+            <div class="team-member-flip" data-aos="fade-up" data-aos-delay="100">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="/images/manikant ji.jpg" alt="John Doe">
+                        <h3>Prof. Mani Kant Paswan</h3>
+                        <p>Director, SLIET</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Prof. Mani Kant Paswan</h3>
+                        <p class="role">Director, SLIET</p>
+                        <div class="member-details">
+                            <p>Director, SLIET</p>
+                            <p></p>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="team-member-flip" data-aos="fade-up" data-aos-delay="200">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="/images/dr. amit-kansal.jpeg" alt="Jane Smith">
+                        <h3>Dr.Amit Kansal</h3>
+                        <p>NHPC Director</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Dr.Amit Kansal</h3>
+                        <p class="role">NHPC Director</p>
+                        <div class="member-details">
+                            <p></p>
+                            <p></p>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <!-- <a href="#"><i class="fab fa-github"></i></a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="team-member-flip" data-aos="fade-up" data-aos-delay="200">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="/images/Manoj.webp" alt="Jane Smith">
+                        <h3>Dr. Manoj Goyal</h3>
+                        <p>Faculty Advisor</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Dr. Manoj Goyal</h3>
+                        <p class="role">Faculty Advisor</p>
+                        <div class="member-details">
+                            <p>H.O.D. of D.D.S. </p>
+                            <p>Mechanical Department</p>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <!-- <div class="team-member-flip" data-aos="fade-up" data-aos-delay="300">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Mike Johnson">
+                        <h3>Mike Johnson</h3>
+                        <p>Operations Manager</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Mike Johnson</h3>
+                        <p class="role">Operations Manager</p>
+                        <div class="member-details">
+                            <p>15+ years in logistics and operations</p>
+                            <p>Expert in supply chain management</p>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+
+    <section id="team">
+        <h2 data-aos="fade-up">Our Proud Alumni</h2>
+        <div class="team-grid">
+            <div class="team-member-flip" data-aos="fade-up" data-aos-delay="100">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="/images/raj-taigore.webp" alt="John Doe">
+                        <h3>Raj Tagore</h3>
+                        <p>Founder</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Raj Tagore</h3>
+                        <p class="role">Founder</p>
+                        <div class="member-details">
+                            <p>Batch 20xx to 20xx</p>
+                            <p>SLIET Student</p>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="team-member-flip" data-aos="fade-up" data-aos-delay="200">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="/images/abhishek-yadav.webp" alt="Jane Smith">
+                        <h3>Abhishek Yadav</h3>
+                        <p>Co-Founder</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Abhishek Yadav</h3>
+                        <p class="role">Co-Founder</p>
+                        <div class="member-details">
+                            <p>Batch 20xx to 20xx</p>
+                            <p>SLIET Student</p>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="team-member-flip" data-aos="fade-up" data-aos-delay="200">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="/images/anand-kumar-gautam.webp" alt="Jane Smith">
+                        <h3>Anand Kumar Gautam</h3>
+                        <p>Purchasing Head</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Anand Kumar Gautam</h3>
+                        <p class="role">Purchasing Head</p>
+                        <div class="member-details">
+                            <p>Batch 20xx to 20xx</p>
+                            <p>SLIET Student</p>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="team-member-flip" data-aos="fade-up" data-aos-delay="300">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="/images/nitish-kumar.webp" alt="Mike Johnson">
+                        <h3>Nitish Kumar</h3>
+                        <p>Team Leader</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Nitish Kumar</h3>
+                        <p class="role">Team Leader</p>
+                        <div class="member-details">
+                            <p>Batch 20xx to 20xx</p>
+                            <p>SLIET Student</p>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-member-flip" data-aos="fade-up" data-aos-delay="200">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="/images/tuntun-yadav.webp" alt="Jane Smith">
+                        <h3>Tuntun Yadav</h3>
+                        <p>Mechanical Head</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Tuntun Yadav</h3>
+                        <p class="role">Mechanical Head</p>
+                        <div class="member-details">
+                            <p>Batch 20xx to 20xx</p>
+                            <p>SLIET Student</p>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- //current team  -->
+
+     <section id="team">
+        <h2 data-aos="fade-up">Our Current Team</h2>
+        <div class="team-grid">
+            <div class="team-member-flip" data-aos="fade-up" data-aos-delay="100">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="/images/shubham-srivastav.webp" alt="Shubham Srivastav">
+                        <h3>Shubham Srivastav</h3>
+                        <p>Electronics Head</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Shubham Srivastav</h3>
+                        <p class="role">Electronics Head</p>
+                        <div class="member-details">
+                            <p>Batch 20xx to 20xx</p>
+                            <p>SLIET Student</p>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="team-member-flip" data-aos="fade-up" data-aos-delay="200">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="/images/prakhyat-prakhar.webp" alt="Prakhyat Prakhar">
+                        <h3>Prakhyat Prakhar</h3>
+                        <p>App Head</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Prakhyat Prakhar</h3>
+                        <p class="role">App Head</p>
+                        <div class="member-details">
+                            <p>Batch 20xx to 20xx</p>
+                            <p>SLIET Student</p>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="team-member-flip" data-aos="fade-up" data-aos-delay="200">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="/images/sandeep-kumar.webp" alt="Sandeep Kumar">
+                        <h3>Sandeep Kumar</h3>
+                        <p>App Head</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Sandeep Kumar</h3>
+                        <p class="role">App Head</p>
+                        <div class="member-details">
+                            <p>Batch 2022 to 2026</p>
+                            <p>SLIET Student</p>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="team-member-flip" data-aos="fade-up" data-aos-delay="200">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="/images/punit-srivastava.webp" alt="Punit Srivastava">
+                        <h3>Punit Srivastava</h3>
+                        <p>Documentation Head</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Punit Srivastava</h3>
+                        <p class="role">Documentation Head</p>
+                        <div class="member-details">
+                            <p>Batch 20xx to 20xx</p>
+                            <p>SLIET Student</p>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="team-member-flip" data-aos="fade-up" data-aos-delay="300">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="/images/ashish-ojha.webp" alt="Ashish Ojha">
+                        <h3>Ashish Ojha</h3>
+                        <p>Fabrication Head</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Ashish Ojha</h3>
+                        <p class="role">Fabrication Head</p>
+                        <div class="member-details">
+                            <p>20xx to 20xx</p>
+                            <p>SLIET Student</p>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="team-member-flip" data-aos="fade-up" data-aos-delay="300">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="/images/balprit kaur.webp" alt="Balprit Kaur">
+                        <h3>Balprit Kaur</h3>
+                        <p>Graphic Head</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Balprit Kaur</h3>
+                        <p class="role">Graphic Head</p>
+                        <div class="member-details">
+                            <p>20xx to 20xx</p>
+                            <p>SLIET Student</p>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="team-member-flip" data-aos="fade-up" data-aos-delay="300">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="/images/raju kumar.jpg" alt="Raju Kumar">
+                        <h3>Raju Kumar</h3>
+                        <p>Website Head</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Raju Kumar</h3>
+                        <p class="role">Website Team</p>
+                        <div class="member-details">
+                            <p>Batch 2023 to 2027</p>
+                            <p>CSE Student</p>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="team-member-flip" data-aos="fade-up" data-aos-delay="300">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Manish Kumar">
+                        <h3>Manish Kumar</h3>
+                        <p>Website</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Manish Kumar</h3>
+                        <p class="role">Website Team</p>
+                        <div class="member-details">
+                            <p>Batch 2023 to 2027</p>
+                            <p>CSE Student</p>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="team-member-flip" data-aos="fade-up" data-aos-delay="300">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Naresh">
+                        <h3>Naresh</h3>
+                        <p>Website</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Naresh</h3>
+                        <p class="role">Website Team</p>
+                        <div class="member-details">
+                            <p>2023 to 2027</p>
+                            <p>CSE Student</p>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-member-flip" data-aos="fade-up" data-aos-delay="300">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Nivedan">
+                        <h3>Nivedan</h3>
+                        <p>Electronics Head</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Nivedan</h3>
+                        <p class="role">Electronics Head</p>
+                        <div class="member-details">
+                            <p>2023 to 2027</p>
+                            <p>ECE Student</p>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Carousel Section -->
+    <section class="team-carousel">
+        <div class="center">
+            <h1>Our Team Members</h1>
+        </div>
+        
+        <div class="carousel-container">
+            <button class="carousel-button prev">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            
+            <div class="carousel-track-container">
+                <div class="carousel-track">
+                    <!-- Card 1 -->
+                    <div class="carousel-card">
+                        <div class="card-inner">
+                            <img src="/images/bablu-img.jpg" alt="Team Member">
+                            <h3>Bablu Mandal</h3>
+                            <p class="role">Electronics domain</p>
+                            <p class="bio">Batch 2024-28</p>
+                            <div class="social-links">
+                                <a href="https://www.linkedin.com/in/bablu-mandal-6a7b31343?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
+                                <!-- <a href="#"><i class="fab fa-github"></i></a> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="carousel-card">
+                        <div class="card-inner">
+                            <img src="/images/swati.jpg" alt="Team Member">
+                            <h3>Swati Mehra</h3>
+                            <p class="role">Programming Team</p>
+                            <p class="bio">Batch 2024-28</p>
+                            <div class="social-links">
+                                <a href="https://www.linkedin.com/in/swasti-mehra-a1843532a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://github.com/Swasti177"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="carousel-card">
+                        <div class="card-inner">
+                            <img src="/images/mandeep.jpg" alt="Team Member">
+                            <h3>Mandeep Kaur</h3>
+                            <p class="role">Electronic Domain</p>
+                            <p class="bio">Batch 2024-28</p>
+                            <div class="social-links">
+                                <a href="https://www.linkedin.com/in/mandeep-kaur-b37b1b317?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
+                                    <i class='bx bxl-linkedin'></i></a>
+                                <!-- <a href="#"><i class='bx bxl-twitter'></i></a>
+                                <a href="#"><i class='bx bxl-medium'></i></a> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="carousel-card">
+                        <div class="card-inner">
+                            <img src="/images/prerna.jpg" alt="Team Member">
+                            <h3>Prerna Sharma</h3>
+                            <p class="role">Management Domain</p>
+                            <p class="bio">Batch 2024-28</p>
+                            <div class="social-links">
+                                <a href="https://www.linkedin.com/in/prerna-sharma-47a315325?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://github.com/Prerna5808"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="carousel-card">
+                        <div class="card-inner">
+                            <img src="images/rahi.jpg" alt="Team Member">
+                            <h3>Deepak Kr. Rahi</h3>
+                            <p class="role">Programming Domain</p>
+                            <p class="bio">Batch 2024-28</p>
+                            <div class="social-links">
+                                <a href="https://www.linkedin.com/in/deepak-rahi"><i class="fab fa-linkedin"></i></a>
+                                <!-- <a href="#"><i class="fab fa-github"></i></a> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-card">
+                        <div class="card-inner">
+                            <img src="images/ayushi-kumari.jpg" alt="Team Member">
+                            <h3>Ayushi Kumari</h3>
+                            <p class="role">Management Team</p>
+                            <p class="bio">Batch 2024-2028</p>
+                            <div class="social-links">
+                                <a href="https://www.linkedin.com/in/ayushi-singh-aa5491271?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
+                                <!-- <a href="#"><i class="fab fa-github"></i></a> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Additional Cards -->
+                    <!-- Cards 6-15 with similar structure -->
+                    <!-- Repeat the card structure for 10 more team members -->
+                </div>
+            </div>
+
+            <button class="carousel-button next">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- contact us section -->
+
+    <section class="section section-contact">
+        <div class="container">
+          <h2 class="common-heading">Contact Us</h2>
+        </div>
+        <div class="section-contact-main contact-container">
+          <form  action="#"
+          method="POST">
+            <div class="grid">
+              <div class="contact-box">
+              <level for="Username"></level>
+              <input type="text"
+               name="username" 
+               placeholder="Your Name" 
+               id="username"
+               required
+               autocomplete="off"/>
+              </div>
+  
+              <div class="contact-box" >
+                <level for="Email"></level>
+                <input type="email"
+                 name="email" 
+                 placeholder="demo@gmail.com" 
+                 id="email"
+                 required
+                 autocomplete="off"
+                 />
+                </div>
+  
+              <div class="contact-box"><lebel for="Text Area"></lebel>
+                <textarea
+                 name="textarea" 
+                 id="textarea"
+                  cols="30"
+                   placeholder="Type Message" 
+                   rows="10"
+                   required
+                  autocomplete="off"
+                ></textarea>
+              </div>
+                <div class="contact-box">
+                 <input type="submit" 
+                 name="submit" 
+                 id="submit" 
+                 class="btn" 
+                 value="Send message"
+                 min="5"
+                 >
+  
+                </div>
+          </form>
+        </div>
+      </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>About CYCLEONE</h3>
+                <p>CYCLEONE is revolutionizing urban mobility through our innovative bicycle sharing platform. Join us in creating a sustainable future for transportation.</p>
+                <div class="contact-info">
+                    <span><i class="fas fa-phone"></i> 91+ 0000000000</span>
+                    <span><i class="fas fa-envelope"></i> support@cycleone.in</span>
+                    <span><i class="fas fa-map-marker-alt"></i>Lab #2, Institute Innovation Cell, SLIET, 148106, Sangrur (Punjab), India</span>
+                </div>
+                <div class="socials">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#model">Business Model</a></li>
+                    <li><a href="#funding">Funding</a></li>
+                    <li><a href="#team">Our Team</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section services">
+                <h3>Our Services</h3>
+                <ul>
+                    <li><a href="#">Bike Rentals</a></li>
+                    <li><a href="#">Corporate Partnerships</a></li>
+                    <li><a href="#">Community Programs</a></li>
+                    <li><a href="#">Student Discounts</a></li>
+                    <li><a href="#">Maintenance</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section newsletter">
+                <h3>Stay Updated</h3>
+                <p>Subscribe to our newsletter for the latest updates and special offers.</p>
+                <form class="newsletter-form">
+                    <div class="form-group">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" class="subscribe-btn"><span>Subscribe</span></button>
+                    </div>
+                </form>
+                <div class="app-downloads">
+                    <p>Download our app:</p>
+                    <div class="store-buttons">
+                        <a href="#" class="store-btn">
+                            <i class="fab fa-google-play"></i> Google Play
+                        </a>
+                        <a href="#" class="store-btn">
+                            <i class="fab fa-apple"></i> App Store
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 CYCLEONE. All rights reserved.</p>
+            <a></a>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
