@@ -1370,6 +1370,7 @@ html {
 /* Responsive Design */
 @media (max-width: 768px) {
     .company-name{
+        margin-left: 4rem;
         color: #ffffff;
     }
     .brand{
