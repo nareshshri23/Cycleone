@@ -14,11 +14,6 @@ document.body.appendChild(progressBar);
 const themeToggle = document.querySelector('.theme-toggle');
 const moonIcon = document.querySelector('.fa-moon');
 
-// themeToggle.addEventListener('click', () => {
-//     moonIcon.classList.toggle('fa-sun');
-//     document.documentElement.classList.toggle('light-mode');
-// });
-
 // Smooth scroll for navigation links
 document.querySelectorAll('nav a').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
@@ -30,15 +25,20 @@ document.querySelectorAll('nav a').forEach(anchor => {
 });
 
 // Add scroll event listener for navbar
-window.addEventListener('scroll', () => {
-    const nav = document.querySelector('nav');
-    if (window.scrollY > 50) {
-        nav.style.background = 'var(--nav-background)';
-        nav.style.boxShadow = 'var(--card-shadow)';
-    } else {
-        nav.style.background = 'var(--nav-background)';
-        nav.style.boxShadow = 'none';
-    }
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navLinks.classList.toggle('active');
+});
+
+// Close menu when clicking a nav link
+document.querySelectorAll('.nav-item').forEach(link => {
+    link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navLinks.classList.remove('active');
+    });
 });
 
 // Add active class to current section in navigation
