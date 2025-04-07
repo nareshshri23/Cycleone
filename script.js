@@ -14,6 +14,7 @@ document.body.appendChild(progressBar);
 const themeToggle = document.querySelector('.theme-toggle');
 const moonIcon = document.querySelector('.fa-moon');
 
+
 // Smooth scroll for navigation links
 document.querySelectorAll('nav a').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
@@ -24,7 +25,8 @@ document.querySelectorAll('nav a').forEach(anchor => {
     });
 });
 
-// Add scroll event listener for navbar
+// navbar js
+
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
 
@@ -222,23 +224,23 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // animated navbar
 
-const list = document.querySelectorAll('.list');
+// const list = document.querySelectorAll('.list');
 
-function activeLink() {
-    list.forEach((item) => 
-        item.classList.remove('active')
-    );
-    this.classList.add('active');
-}
+// function activeLink() {
+//     list.forEach((item) => 
+//         item.classList.remove('active')
+//     );
+//     this.classList.add('active');
+// }
 
-list.forEach((item) => {
-    item.addEventListener('click', activeLink);
-    item.addEventListener('mouseover', () => {
-        item.classList.add('hovered');
-    });
-    item.addEventListener('mouseout', () => {
-        if (!item.classList.contains('active')) {
-            item.classList.remove('hovered');
-        }
-    });
-});
+// list.forEach((item) => {
+//     item.addEventListener('click', activeLink);
+//     item.addEventListener('mouseover', () => {
+//         item.classList.add('hovered');
+//     });
+//     item.addEventListener('mouseout', () => {
+//         if (!item.classList.contains('active')) {
+//             item.classList.remove('hovered');
+//         }
+//     });
+// });
