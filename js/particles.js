@@ -79,9 +79,10 @@ function checkVisibility() {
     const canvas = document.getElementById('particleCanvas');
     const homeSection = document.getElementById('home');
     const homeBounds = homeSection.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
     
-    // Check if home section is visible
-    if (homeBounds.top <= 0 && homeBounds.bottom >= 0) {
+    // Keep animation visible as long as any part of home section is in viewport
+    if (homeBounds.bottom > 0 && homeBounds.top < windowHeight) {
         canvas.style.opacity = '1';
         canvas.style.visibility = 'visible';
     } else {
