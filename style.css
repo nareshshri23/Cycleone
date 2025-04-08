@@ -1706,7 +1706,7 @@ ul{list-style: none}
     height: 14px;
     background: var(--secondary-color);
     border-radius: 50%;
-    left: 49.5%;
+    left: 49.3%;
     bottom: -7px;
     transform: translate(-50%, 50%);
     z-index: 2;
@@ -2401,7 +2401,7 @@ ul{list-style: none}
     }
 
     .timeline-wrapper .bottom-dot {
-        left: 28px !important;
+        left: 34px !important;
         width: 14px;
         height: 14px;
     }
