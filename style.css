@@ -1370,7 +1370,8 @@ html {
 /* Responsive Design */
 @media (max-width: 768px) {
     .company-name{
-        margin-left: 3rem;
+        font-size: 24px;
+        margin-left: 0.4rem;
         color: #ffffff;
     }
     .brand{
@@ -1706,7 +1707,7 @@ ul{list-style: none}
     height: 14px;
     background: var(--secondary-color);
     border-radius: 50%;
-    left: 49.3%;
+    left: 49.4%;
     bottom: -7px;
     transform: translate(-50%, 50%);
     z-index: 2;
