@@ -1270,7 +1270,7 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.4rem 4%;
+    padding: 0.2rem 4%;
     border: white 4px solid;
     border-right: 0;
     background: rgb(255,255,255);
@@ -1297,11 +1297,21 @@ html {
 
 .company-name {
     margin-left: -10px;
-    font-size: 1.8rem;
+    font-size: 1.9rem;
     font-weight: 800;
     color: #f95212;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
     text-transform: uppercase;
+    font-family: 'Regen', sans-serif;
+}
+
+.nav-tagline {
+    font-size: 0.4rem;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-left: 0.5rem;
+    margin-top: 1px;
 }
 
 .tagline {
@@ -1329,6 +1339,7 @@ html {
     text-transform: uppercase;
     letter-spacing: 1px;
     transition: all 0.3s ease;
+    font-family: 'Regen', sans-serif;
 }
 
 .nav-line {
@@ -1371,11 +1382,17 @@ html {
 @media (max-width: 768px) {
     .company-name{
         font-size: 24px;
-        margin-left: 0.4rem;
+        margin-left: 0.25rem;
         color: #ffffff;
     }
     .brand{
         margin-left: 3rem;
+    }
+    .nav-tagline {
+        font-size: 0.45rem;
+        margin-left: 1.45rem;
+        margin-top: 2px;
+        letter-spacing: 1.5px;
     }
     .nav-links {
         position: absolute;
@@ -1919,7 +1936,7 @@ ul{list-style: none}
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #f7a548;
+    background-color: white;
     z-index: 9999;
     display: flex;
     justify-content: center;
