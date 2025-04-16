@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - Cycle One</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts/regen/regen.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+    <div id="particleCanvas"></div>
+    <div id="include-navbar"></div>
+        <section class="terms-of-service" style="padding: 4rem 2rem; background-color: var(--background-color);">
+            <h1 style="text-align: center; color: var(--primary-color); margin-bottom: 2rem; font-size: 2.5rem; font-weight: 600;">Terms of Service</h1>
+            
+            <div style="max-width: 800px; margin: 0 auto; color: var(--text-secondary); font-size: 1.1rem; line-height: 1.8;">
+                <p style="margin-bottom: 1.5rem;">Last updated: January 2024</p>
+
+                <h2 style="color: var(--primary-color); margin: 2rem 0 1rem; font-size: 1.8rem; font-weight: 500;">1. Acceptance of Terms</h2>
+                <p>By accessing and using this website, you accept and agree to be bound by the terms and provision of this agreement.</p>
+
+                <h2 style="color: var(--primary-color); margin: 2rem 0 1rem; font-size: 1.8rem; font-weight: 500;">2. Use License</h2>
+                <p>Permission is granted to temporarily access the materials (information or software) on Cycle One's website for personal, non-commercial transitory viewing only.</p>
+                <p>This is the grant of a license, not a transfer of title, and under this license you may not:</p>
+                <ul style="margin-left: 2rem; margin-bottom: 1.5rem; list-style-type: disc;">
+                    <li>Modify or copy the materials</li>
+                    <li>Use the materials for any commercial purpose</li>
+                    <li>Attempt to decompile or reverse engineer any software contained on the website</li>
+                    <li>Remove any copyright or other proprietary notations from the materials</li>
+                </ul>
+
+                <h2 style="color: var(--primary-color); margin: 2rem 0 1rem; font-size: 1.8rem; font-weight: 500;">3. Disclaimer</h2>
+                <p>The materials on Cycle One's website are provided on an 'as is' basis. Cycle One makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p>
+
+                <h2 style="color: var(--primary-color); margin: 2rem 0 1rem; font-size: 1.8rem; font-weight: 500;">4. Limitations</h2>
+                <p>In no event shall Cycle One or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on Cycle One's website.</p>
+
+                <h2 style="color: var(--primary-color); margin: 2rem 0 1rem; font-size: 1.8rem; font-weight: 500;">5. Revisions and Errata</h2>
+                <p>The materials appearing on Cycle One's website could include technical, typographical, or photographic errors. Cycle One does not warrant that any of the materials on its website are accurate, complete or current.</p>
+
+                <h2 style="color: var(--primary-color); margin: 2rem 0 1rem; font-size: 1.8rem; font-weight: 500;">6. Links</h2>
+                <p>Cycle One has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by Cycle One of the site.</p>
+
+                <h2 style="color: var(--primary-color); margin: 2rem 0 1rem; font-size: 1.8rem; font-weight: 500;">7. Modifications</h2>
+                <p>Cycle One may revise these terms of service for its website at any time without notice. By using this website you are agreeing to be bound by the then current version of these terms of service.</p>
+            </div>
+        </section>
+    </div>
+    <div id="include-footer"></div>
+    <script src="js/particles.js"></script>
+    <script src="script.js"></script>
+    <script>
+        fetch('components/navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('include-navbar').innerHTML = data;
+            });
+        fetch('components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('include-footer').innerHTML = data;
+            });
+    </script>
+</body>
+</html>
