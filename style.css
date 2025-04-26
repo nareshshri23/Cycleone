@@ -1749,7 +1749,7 @@ ul{list-style: none}
   }
   
   /* Bottom blinking dot */
-  .timeline-wrapper::after {
+  .timeline-wrapper::before {
     content: '';
     position: absolute;
     width: 6px;
