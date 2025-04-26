@@ -540,12 +540,10 @@ h2 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 10rem;
-    /* gap: 2rem; */
     margin-top: 2rem;
-    padding: 0 1rem;
-    /* padding-left: 10%; */
-    padding-left: 5%;
+    justify-items: center;
 }
+
 
 #team {
     position: relative;
