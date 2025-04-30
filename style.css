@@ -23,7 +23,7 @@
 
 body {
     background: var(--background-color);
-    color: var(--text-color);
+    color: var(--primary-color);
     padding-top: 80px;
 }
 
@@ -1728,7 +1728,7 @@ ul{list-style: none}
   
   #timeline h1 {
     text-align: center;
-    color: var(--text-color);
+    color: var(--primary-color);
     font-size: 2.5rem;
     margin-bottom: 20px;
   }
@@ -1755,33 +1755,15 @@ ul{list-style: none}
         180deg,
         transparent 0%,
         var(--primary-color) 10%,
-        var(--secondary-color) 90%
+        var(--secondary-color) 40%,
+        var(--secondary-color) 90%,
+        transparent 100%
     );
     top: 0;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
     z-index: 0;
-  }
-  
-  /* Adding the bottom dot as a separate element */
-  .timeline-wrapper .bottom-dot {
-    content: '';
-    position: absolute;
-    width: 14px;
-    height: 14px;
-    background: var(--secondary-color);
-    border-radius: 50%;
-    left: 49.4%;
-    bottom: -7px;
-    transform: translate(-50%, 50%);
-    z-index: 2;
-    animation: blink 2s infinite;
-  }
-  
-  @keyframes blink {
-    0%, 100% { opacity: 0.4; transform: scale(1); }
-    50% { opacity: 1; transform: scale(1.2); }
   }
   
   /* Timeline Cards */
