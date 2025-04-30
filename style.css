@@ -592,7 +592,7 @@ h2 {
 .flip-card-front,
 .flip-card-back {
     position: absolute;
-    width: 100%;
+    width: 110%;
     height: 100%;
     backface-visibility: hidden;
     border-radius: 15px;
