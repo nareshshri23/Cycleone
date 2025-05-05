@@ -78,7 +78,7 @@ section {
 
 @font-face {
     font-family: 'AirstrikeChrome';
-    src: url('fonts/airstrike3d.ttf') format('truetype');
+    src: url('./fonts/airstrike3d.ttf') format('truetype');
 }
 
 .hero h1 {
