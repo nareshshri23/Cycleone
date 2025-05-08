@@ -2065,7 +2065,6 @@ ul{list-style: none}
     }
 
     .team-grid {
-        /* gap: 25px; */
         gap: 100px;
     }
 }
@@ -2486,7 +2485,7 @@ ul{list-style: none}
     }
 
     .timeline-wrapper::before {
-        left: 12.5 !important;
+        left: 12.5% !important;
     }
 
     .timeline-wrapper .bottom-dot {
@@ -2591,9 +2590,7 @@ html, body {
         padding: 15px 10px;
     }
 
-    
-
-    .carousel-track-container {
+     .carousel-track-container {
         margin: 0 10px;
     }
 
