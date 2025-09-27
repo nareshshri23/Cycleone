@@ -15,13 +15,19 @@ const themeToggle = document.querySelector('.theme-toggle');
 const moonIcon = document.querySelector('.fa-moon');
 
 
-// Smooth scroll for navigation links
+// Smooth scroll for navigation links (only for internal anchor links)
 document.querySelectorAll('nav a').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        const targetId = this.getAttribute('href');
-        const targetSection = document.querySelector(targetId);
-        targetSection.scrollIntoView({ behavior: 'smooth' });
+        const href = this.getAttribute('href');
+        // Only prevent default for internal anchor links (starting with #)
+        if (href.startsWith('#')) {
+            e.preventDefault();
+            const targetSection = document.querySelector(href);
+            if (targetSection) {
+                targetSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+        // For external links (like about.html), let the browser handle normally
     });
 });
 
