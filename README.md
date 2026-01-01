@@ -17,7 +17,7 @@ A cutting-edge, performance-optimized website for Cycleone, delivering a seamles
 
 ## Live Deployment
 
-**👉 [Live Website:](https://cycleone.in/)**  
+**👉 [Live Website](https://cycleone.in/)**  
 
 ## Technical Stack
 
@@ -38,10 +38,6 @@ A cutting-edge, performance-optimized website for Cycleone, delivering a seamles
 2. **Launch the application**
    - Simply open `index.html` in any modern web browser
    - No build tools or dependencies required
-
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
 
 ## 📬 Contact
 
