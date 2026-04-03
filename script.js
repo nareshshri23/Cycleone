@@ -1,8 +1,8 @@
 // Initialize AOS (Animate On Scroll) with smooth animations
 AOS.init({
-    duration: 1000,     // Animation duration in milliseconds
-    once: false,        // Whether animation should happen only once
-    mirror: true        // Whether elements should animate out while scrolling past them
+    duration: 1000,     
+    once: false,
+    mirror: true
 });
 
 // Create and append scroll progress bar to track page scroll
