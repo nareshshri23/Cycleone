@@ -12,7 +12,6 @@ A cutting-edge, performance-optimized website for Cycleone, delivering a seamles
 - **Interactive Elements**:
   - Smooth, animated team carousel with touch support
   - Intuitive navigation with scroll-spy functionality
-  - Dynamic theme switching (light/dark mode)
 - **Modern UI/UX**:
   - Clean, minimalist design
   - Subtle animations and transitions
@@ -43,8 +42,8 @@ cycleone/
 ## Local Development
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/nareshshri23/cycleone.git
-   cd cycleone
+   git clone https://github.com/nareshshri23/Cycleone.git
+   cd Cycleone
    ```
 2. **Launch the application locally**
    You can simply open `index.html` in your browser, but using a local server is recommended to prevent asset loading issues.
