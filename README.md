@@ -120,7 +120,6 @@ Any changes merged into `main` are deployed through GitHub Pages.
 - **Domain:** `cycleone.in`
 - **Website hosting:** GitHub Pages
 - **Custom domain:** Configured through GitHub Pages
-- **DNS provider/registrar:** [Please verify: Namecheap / Cloudflare / other]
 
 The `CNAME` file contains the custom domain configuration for GitHub Pages.
 > **Note**: Do not store domain account passwords, API keys, or other credentials in this repository.
@@ -166,8 +165,6 @@ Before making major changes, create an Issue describing the proposed change and 
 CycleOne is maintained by students and contributors from SLIET.
 
 Contributors should follow the Git workflow described above when making changes.
-- Naresh — Initial website development
-- [Add Junior Names here]
 
 ## Contact
 For inquiries or support, please contact [support@cycleone.in](mailto:support@cycleone.in)
